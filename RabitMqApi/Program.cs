@@ -10,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddTransient<IMessagePublisher, MessagePublisher>();
+builder.Services.AddTransient<IUser, User>();
 
 var app = builder.Build();
 
